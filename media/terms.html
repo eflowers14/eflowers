@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Políticas de Privacidad y Condiciones de Uso</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="#Condiciones">Condiciones de Uso</a>
+    <br>
+    <a href="#Contacto">Contacto</a>
+    <br>
+    <a href="https://facebook.com" rel="noreferrer" target="_blank">Facebook</a>
+    <br>
+    <a href="terms.html" download>Descargar este archivo en HTML</a>
+    <br>
+    <h1 >Políticas de Privacidad</h1>
+    <p>En CUBA, valoramos su privacidad. Esta política explica cómo recopilamos, usamos y protegemos su información personal.</p>
+
+    <h2>Información que Recopilamos</h2>
+    <p>Recopilamos información que usted nos proporciona directamente, como su nombre, dirección de correo electrónico y otra información de contacto.</p>
+
+    <h2>Uso de la Información</h2>
+    <p>Utilizamos su información para:</p>
+    <ul>
+        <li>Proporcionar y mejorar nuestros servicios.</li>
+        <li>Comunicarle actualizaciones y promociones.</li>
+        <li>Responder a sus consultas y solicitudes.</li>
+    </ul>
+
+    <h2>Protección de la Información</h2>
+    <p>Tomamos medidas razonables para proteger su información personal de accesos no autorizados y divulgaciones.</p>
+
+    <h1 id="Condiciones">Condiciones de Uso</h1>
+    <p>Al utilizar nuestro sitio web, usted acepta las siguientes condiciones:</p>
+
+    <h2>Uso Aceptable</h2>
+    <p>No debe usar el sitio web para actividades ilegales o no autorizadas. Usted es responsable de cualquier contenido que publique.</p>
+
+    <h2>Propiedad Intelectual</h2>
+    <p>Todo el contenido del sitio web, incluyendo textos, gráficos y logotipos, es propiedad de CUBA o de terceros y está protegido por las leyes de propiedad intelectual.</p>
+
+    <h2>Cambios en las Políticas</h2>
+    <p>Nos reservamos el derecho de modificar estas políticas en cualquier momento. Los cambios serán efectivos una vez publicados en esta página.</p>
+
+    <h2 id="Contacto">Contacto</h2>
+    <p>Si tiene preguntas sobre nuestras políticas, contáctenos en [correo electrónico] o [número de teléfono].</p>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>

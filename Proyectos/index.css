@@ -1,0 +1,62 @@
+body{
+    background: url("Fondo.jpg");
+    color: white;
+}
+/* Main Section */
+.gridContainer{
+    display: grid;
+    gap: 20px;
+    border-radius: 5px;
+    font-family: Helvetica, sans-serif, monospace;
+    margin: auto;
+    padding: 15px;
+}
+.aboutBox{
+    border: 2px solid #ccd;
+    border-radius: 5px;
+    margin: auto;
+    background: #55555510;
+    backdrop-filter: blur(5px);
+}
+.skillsBox{
+    border: 2px solid #ccd;
+    border-radius: 5px;
+    margin: auto;
+    background: #55555510;
+    backdrop-filter: blur(5px);
+}
+.proyectBox{
+    border: 2px solid #ccd;
+    border-radius: 5px;
+    margin: auto;
+    background: #55555510;
+    backdrop-filter: blur(5px);
+}
+h2, p{
+    margin-left: 5px;
+}
+
+/* Navegador Inferior */
+footer{
+    position: absolute;
+    bottom: 20px;
+    width: 100vw;
+}
+.footerBox{
+    margin: auto;
+    width: 80vw;
+}
+.navInferior{
+    display: flex;
+    background: #55555510;
+    backdrop-filter: blur(5px);
+    border: 2px solid #ccd;
+    border-radius: 10px;
+    list-style: none;
+}
+ul, li, a{
+    padding: 2px;
+    margin: auto;
+    text-decoration: none;
+    color: aquamarine;
+}

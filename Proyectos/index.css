@@ -10,6 +10,7 @@ body{
     font-family: Helvetica, sans-serif, monospace;
     margin: auto;
     padding: 15px;
+    min-width: 230px;
 }
 .aboutBox{
     border: 2px solid #ccd;
@@ -44,7 +45,7 @@ footer{
 }
 .footerBox{
     margin: auto;
-    width: 80vw;
+    max-width: 80vw;
 }
 .navInferior{
     display: flex;

@@ -54,7 +54,7 @@ h2, p{
 footer{
     position: absolute;
     bottom: 20px;
-    width: 100vw;
+    width: 97vw;
 }
 .footerBox{
     margin: auto;
@@ -92,7 +92,7 @@ ul, li, a{
         margin: 0;
     }
     .navInferior{
-        height: 100px;
+        height: 50px;
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
     }

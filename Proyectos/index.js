@@ -1,0 +1,1 @@
+const aboutME = document.getElementsByClassName("aboutBox");

@@ -1,0 +1,40 @@
+*{
+  box-sizing: border-box;
+  padding: 10px;
+  }
+html{
+  background: linear-gradient(#55ffaa, #aaa);
+}
+h1{
+  font-weight: 500;
+  font-family: sans-serif;
+  text-align: center;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+img{
+  grid-area: img;
+  border-radius: 2px;
+  max-width: 200px;
+  box-shadow: 3px 3px 15px 3px black;
+}
+.paint{
+  display: grid;
+  grid-template-areas: 
+  "img title";
+  flex-direction: row;
+}
+.title{
+  flex-direction: row;
+  grid-area: title;
+  text-align: center;
+  padding: 10px;
+  margin: auto 25px;
+  width: 200px;
+  height: 250px;
+  background-color: cadetblue;
+  font-size: larger;
+}

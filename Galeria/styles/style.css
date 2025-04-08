@@ -1,6 +1,7 @@
 *{
   box-sizing: border-box;
   padding: 10px;
+  border: x solid black;
   }
 html{
   background: linear-gradient(#55ffaa, #aaa);
@@ -11,14 +12,14 @@ h1{
   text-align: center;
 }
 .container{
-  display: flex;
+  display: grid;
   flex-direction: column;
-  margin: 0 auto;
+  margin: auto;
 }
 img{
   grid-area: img;
   border-radius: 2px;
-  max-width: 200px;
+  max-width: 150px;
   box-shadow: 3px 3px 15px 3px black;
 }
 .paint{
@@ -31,10 +32,11 @@ img{
   flex-direction: row;
   grid-area: title;
   text-align: center;
-  padding: 10px;
-  margin: auto 25px;
-  width: 200px;
-  height: 250px;
   background-color: cadetblue;
-  font-size: larger;
+  max-width: 150px;
+}
+.title > span{
+  display: block;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 15px;
 }

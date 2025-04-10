@@ -84,12 +84,15 @@ ul, li, a{
         "proyects proyects"
         ;
     }
+    .proyectBox{
+        grid-template-rows: 1 1 250px;
+    }
     footer{
         bottom: 0;
     }
     .footerBox{
         max-width: none;
-        margin: 0;
+        margin: auto;
     }
     .navInferior{
         height: 50px;

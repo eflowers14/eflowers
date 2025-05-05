@@ -19,15 +19,16 @@ h1{
 
 .paint-img {
   width:  100%;
+  min-width: 120px;
   height: auto;
-  flex: 1 2 100px; /* La imagen ocupará al menos 300px o más si hay espacio */
+  flex: 2 1 100px; /* La imagen ocupará al menos 300px o más si hay espacio */
   border-bottom-left-radius: 8px;
   border-top-left-radius: 8px
 }
 
 .paint-description {
   flex: 1 1 100px; /* El texto ocupará al menos 300px o más si hay espacio */
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #fff;
   background-color: blue;
   padding: 15px;
@@ -36,11 +37,11 @@ h1{
 }
 
 .paint-description h2 {
-  margin: 10 10px;
+  margin: auto;
 }
 
 .paint-description p {
-  margin: 15px 20px;
+  margin: 20px auto;
 }
 .paint{
   display: grid;

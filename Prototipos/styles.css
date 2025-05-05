@@ -1,0 +1,17 @@
+:root{
+    --color_principal: red;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    height: 100vh;
+}
+.Box{
+    margin: auto;
+    padding: 20px 40px;
+    border: 2px solid #000;
+    background-color: var(--color_principal);
+    transform: skew(20deg);
+    width: calc(50vw - 20px);
+}

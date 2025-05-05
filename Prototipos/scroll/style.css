@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+
+}
+.box{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    font-size: 1.1rem;
+}
+p::first-letter{
+    initial-letter: 3 1;
+    font-style: italic;
+}
+
+

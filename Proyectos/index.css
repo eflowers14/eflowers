@@ -1,8 +1,12 @@
 html{
     background: url("Fondo sin contraste.jpg");
-    color: white;
+    color: aliceblue;
 }
 /* Main Section */
+body{
+    min-height: 100vh;
+    margin: 0;
+}
 .gridContainer{
     display: grid;
     gap: 20px;

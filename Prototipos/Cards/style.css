@@ -1,0 +1,26 @@
+:root{
+    --color1: #aa22224f;
+    --color2: #ff1;
+    --color3: #1111dd50;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html{
+    background-color: var(--color1);
+}
+picture, img{
+    width: 100%;
+}
+.cardFront{
+    overflow: hidden;
+    display: block;
+}
+.card{
+    max-width: clamp(300px, 70%, 500px);
+    margin: 20px auto;
+    background: var(--color2);
+}

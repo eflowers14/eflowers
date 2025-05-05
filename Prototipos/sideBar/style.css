@@ -1,0 +1,37 @@
+:root{
+    --color1: #1f185ca6;
+    --color2: #ffffff38;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(45deg, var(--color1), white);
+    height: 100dvh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.side-bar{
+    background: linear-gradient(var(--color1), black);
+    width: 25%;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 10px;
+}
+img{
+    width: 30%;
+}
+li{
+    list-style: none;
+}
+li:hover{
+    background-color: var(--color2);
+    transition: all ease-in-out .2s;
+    border-radius: 9px 0px 0 9px;
+}
+a{
+    text-decoration: none;
+}

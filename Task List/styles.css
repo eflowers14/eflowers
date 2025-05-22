@@ -1,0 +1,51 @@
+:root{
+    --color1: #769100;
+}
+html{
+    background: radial-gradient(white,white, palegreen, green);
+    height: 100dvh;
+    font-family: Verdana;
+    text-align: center;
+}
+#taskInput {
+    padding: 8px;
+    width: 300px;
+    border-radius: 3px;
+    border: none;
+}
+#taskInput:hover{
+    box-shadow: 0 0 12px var(--color1);
+    transition: ease-in-out .1s;
+}
+#addTask:hover{
+    box-shadow: 0 0 12px var(--color1);
+    transition: ease-in-out .1s;
+}
+#addTask{
+    padding: 8px 15px;
+    background: var(--color1);
+    color: white;
+    border: none;
+    position: relative;
+    left: 120px;
+}
+@media screen and (min-width: 420px) {
+    #addTask{
+        left: 0;
+    }
+}
+ul{
+    list-style: none;
+    padding: 10px;
+}
+li{
+    padding: 8;
+    margin: 5px 0;
+    background: #f9f9f9;
+    display: flex;
+    justify-content: space-between;
+}
+.delete{
+    color: red;
+    cursor: pointer;
+}

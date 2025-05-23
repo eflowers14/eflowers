@@ -1,0 +1,24 @@
+{
+  "name": "task-list",
+  "version": "1.0.0",
+  "main": "bakcend.js",
+  "scripts": {
+    "start": "node bakcend.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eflowers14/taskList.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eflowers14/taskList/issues"
+  },
+  "homepage": "https://github.com/eflowers14/taskList#readme",
+  "description": ""
+}

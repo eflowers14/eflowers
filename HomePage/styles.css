@@ -1,0 +1,25 @@
+*{
+    text-align: center;
+}
+
+.card{
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-shadow: 0 0 7px white;
+}
+.display-3, .display-6{
+    text-align: center;
+}
+img{
+    opacity: 60%;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    background: radial-gradient(white, black);
+    width: 100dvw;
+    text-align: center;
+    box-shadow: 0 0 10px black;
+}

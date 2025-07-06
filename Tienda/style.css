@@ -1,0 +1,53 @@
+:root{
+    --color1: #222;
+    --color2: #444;
+    --color3: #116;
+    --color4: #f22;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: Verdana;
+}
+.icono{
+    font-size: 2rem;
+    position: absolute;
+    top: -3px;
+}
+nav{
+    display: flex;
+    width: 100dvw;
+    background-color: var(--color1);
+    height: 3rem;
+    padding: 12px;
+}
+li{
+    margin: auto 20px;
+    text-shadow: 0px 0 13px white;
+}
+ul{
+    display: flex;
+    list-style: none;
+    position: absolute;
+    right: 0;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100dvw;
+    font-size: .8rem;
+    padding: 17px;
+    background-color: var(--color2);
+    justify-content: center;
+}
+footer > p{
+    padding: 3px;
+    background: linear-gradient(to right, var(--color4), var(--color3));
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 25px white;
+}

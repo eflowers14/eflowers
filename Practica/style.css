@@ -1,0 +1,87 @@
+:root{
+    --color1: #f0f0f0;
+    --color2: #222;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    justify-content: center;
+    text-align: center;
+    height: 100dvh;
+}
+/*estilos del NAV */
+nav{
+    display: flex;  
+    background-color: var(--color2);
+    width: 100%;
+    justify-content: space-between;
+}
+.libro{
+    height: 3rem;
+    width: 3rem;
+    padding: 1px;
+}
+ul{ 
+    list-style: none;
+    display: flex;
+    text-align: right;
+}
+li{
+    justify-content: end;
+    text-align: right;
+    margin: auto;
+    padding: 6px;
+    text-shadow: 0 0 20px white;
+}
+
+/* estilos de la carta de presentacion */
+.carta{
+    display: flex;
+    background: var(--color2);
+    color: var(--color1);
+    margin: auto;
+    width: 75%;
+    border-radius: .7rem;
+    box-shadow: 0 15px 30px black;
+    margin-top: 20rem;
+}
+.audio{
+    width: 30%;
+    background: linear-gradient(to right, white 20%, var(--color2));
+    border-radius: 10px 0 0 10px;
+}
+.datos{
+    display: grid;
+}
+p{
+    margin: auto;
+    font-family: 'Trebuchet MS';
+}
+.botones{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+button{
+    border: none;
+    background-color: var(--color2);
+    color: var(--color1);
+}
+button:last-child{
+    border-bottom-right-radius: 8px;
+}
+.carta:hover{
+    transform: scale3d(1.1, 1.1, 0);
+    transition: all ease-in-out .3s;
+}
+button:hover{
+    text-shadow: 0 0 20px var(--color1);
+    cursor: pointer;
+    transition: all ease-in-out .2s;
+    border: .01rem solid var(--color1);
+}
+button:active{
+    font-weight: bolder;
+    transition: all ease-in-out .1s;
+}

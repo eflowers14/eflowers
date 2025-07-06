@@ -1,0 +1,31 @@
+HTML tags:
+1. header
+2. h1
+    2.1 h2
+    2.2 h3
+    2.3 h5
+3. main
+4. div
+5. img
+6. p
+7. a
+8. span
+9. br
+10. button
+11. footer
+12. strong
+
+CSS propierties:
+1. margin
+2. position 
+3. border-radius
+4. widht
+5. text-shadow
+6. text-align
+7. opacity
+
+How I use JS:
+    I just wanted to change de text of a link trough some buttons
+
+How I use Bootstrap:
+    I style most of the page, especialy the main part when i used a card class style

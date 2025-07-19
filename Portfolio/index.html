@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-superior">
+            <div class="img-container">
+                <img src="\Media\20241121_191749.jpg" alt="logo">
+            </div>
+            <ul class="list-superior">
+                <li>Home</li>
+                <li>Skills</li>
+                <li>About</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="summary">
+            <div class="flex">
+                <aside class="data">
+                    <h3>Datos Personales</h3>
+                    <p>Soy Enrique A. Flores Marín un Desarrollador Full-Stack nacido el 14 de febrero de 2003 en Cuba. Me puede contactar mediante los enlaces del nav inferior</p>
+                </aside>
+                <aside class="skills">
+                    <h3>Habilidades</h3>
+                    <p>Tengo las habilidades de HTML, CSS, JavaScript, Pyhton, SQL, Excel, NodeJs, React, Typescript, C, asi como con otros frameworks</p>
+                </aside>
+            </div>
+            <div class="grid">
+                <aside class="projects">
+                    <h3>Proyectos</h3>
+                </aside>
+            </div>
+        </section>
+    </main>
+    <section class="main-section">
+        <aside class="data-text section">
+            <h3>Sobre mi</h3>
+            <p>Enrique Alejandro Flores Marín, desarrollador <strong>Full-Stack</strong>, apasionado por desarrollar aplicaciones por mi solo, pero también por poder ayudar a un equipo en cualquier aprieto en el que se encuentren, con un enfoque en el <strong>Backend</strong> realmente, me gusta trabajar con datos, hacer la funcionalidad de la app o web y todo lo que eso conlleva, aunque también la <strong>UI</strong> es muy importante para mi y me divierto mientras la hago en mis proyectos personales. Creo que son muy importantes ambas funciones del proyecto y deben ir de la mano, siempre busco llegar a un balance entre ellos priorizando la <strong>creatividad</strong> y la <strong>funcionalidad</strong> del proyecto. Lo que siempre deseo es crear alternativas y <strong>soluciones</strong> a los problemas de las personas</p>
+        </aside>
+        <div class="skills-container">
+            <div class="skills-slider">
+                <span class="skill-item">HTML5</span>
+                <span class="skill-item">CSS3</span>
+                <span class="skill-item">JavaScript</span>
+                <span class="skill-item">Python</span>
+                <span class="skill-item">SQLite</span>
+                <span class="skill-item">React</span>
+                <span class="skill-item">NodeJS</span>
+                <span class="skill-item">Typescript</span>
+                <span class="skill-item">C</span>
+                <span class="skill-item">Excel</span>
+                <!--repito las mismas skills para hacer un efecto infinito-->
+                <span class="skill-item">HTML5</span>
+                <span class="skill-item">CSS3</span>
+                <span class="skill-item">JavaScript</span>
+                <span class="skill-item">Python</span>
+                <span class="skill-item">SQLite</span>
+                <span class="skill-item">React</span>
+                <span class="skill-item">NodeJS</span>
+                <span class="skill-item">Typescript</span>
+                <span class="skill-item">C</span>
+                <span class="skill-item">Excel</span>
+            </div>
+        </div>
+        <aside class="text-skills section">
+            <h3>Habilidades</h3>
+            <p>En mis lenguajes de programación se destacan: <br>
+                <strong>JavaScript-TypeScript</strong> para el desarrollo de aplicaciones dinámicas y tipado estático. <strong>Python</strong> enfocado en automaización, análisis de datos, backend, etc. <strong>C</strong> sin mucha experiencia pero, me sirvio para los conocimientos en programacion de bajo nivel y estructuras de datos. <strong>SQL</strong> es mi lenguaje de manejo de datos relacionales preferido en especial SQLite, aunque tambien he usado  <strong>PostgreSQL</strong> <br> Sobre el Frontend Development: <br>
+                Uso <strong>HTML</strong>, <strong>CSS</strong> para la maquetación responsive, accesibilidad y estandares web, <strong>React</strong> para la interfaces interactivas con componentes reutilizables y Frameworks como <strong>Bootstrap</strong> y Material-UI para facilitarme el trabajo. Debo decir que prefiero usar <strong>CSS</strong> solamente <br>
+                Backend y Full-Stack: <br>
+                <strong>NodeJS</strong> para la creación de APIs RESTful y servidores con <strong>Express</strong> y la base de datos mencionadas anteriormente. Estoy trabajando en proyectos con estos rquisitos para ganar experienca <br>
+                Herramientas y otros: <br>
+                <strong>Excel</strong> para el analisis de datos, automatizacion, etc. <strong>Git/Github</strong> para control de version y colaborar. otros Frameworks como Django, Flask, Next.js ...</p>
+        </aside>
+        <aside class="text-soft-skills">
+            <h4>Habilidades Blandas</h4>
+            <p>Trabajo en equipo / Adaptabilidad / Análisis / Comunicación / Pensamiento Crítico / Organización / Servicio al Cliente / Inteligencia Emocional / Resolución de Conflictos / Innovación</p>
+        </aside>
+        <aside class="text-project section">
+            <h3>Mis Proyectos</h3>
+            <div class="projects-grid">
+                <!-- Proyecto 1 -->
+                <div class="project-card">
+                    <img src="#" alt="Proyecto 1" class="project-thumbnail" onclick="openModal('proyecto1')">
+                    <div class="project-info">
+                        <h3>E-commerce React</h3>
+                        <p>Tienda online con carrito de compras y autentificación</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank">Ver online</a>
+                            <a href="#" target="_blank">Código</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 2 -->
+                <div class="project-card">
+                    <img src="#" alt="Proyecto 2" class="project-thumbnail" onclick="openModal('proyecto2')">
+                    <div class="project-info">
+                        <h3>Analizador de datos</h3>
+                        <p>Scrpit de procesamiento de datasets grandes</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">Excel</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank">Ver Online</a>
+                            <a href="#" target="_blank">Ver Código</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </section>
+    <!-- Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModel()">&times;</span>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+    <footer>       
+        <div class="footer">Copyrights Reserved © eflowers 2025</div>
+        <nav class="nav-inferior">
+            <ul class="list-inferior">
+                <li><a href="#">Github</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

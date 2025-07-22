@@ -29,5 +29,10 @@ app.delete('/tareas/:id', (req, res) => {
         res.status(404).send('Tarea no encontrada');
     }
 });
+<<<<<<< HEAD
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on ${PORT}`));
+=======
+const PORT = process.env.PORT || 10000;
+app.listen(PORT, () => console.log(`Server running on ${PORT}`));
+>>>>>>> 16147b695b57bafa86cb34fdb7af64dc6328c317

@@ -1,7 +1,7 @@
 const taskInput = document.getElementById('taskInput');
 const addTaskBtn = document.getElementById('addTask');
 const taskList = document.getElementById('taskList');
-const API_URL = 'https://tasklist-backend-xxxx.onrender.com';
+const API_URL = 'https://tasklist-backend-gfnq.onrender.com';
 
 async function cargarTareas() {
     const res = await fetch(`${API_URL}/tareas`);

@@ -1,0 +1,39 @@
+body{
+    text-align: center;
+    margin-top: 20%;
+    background: #212232af;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#number, #convert-btn{
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 6px;
+    margin-top: 10px;
+}
+.alert{
+    background-color: #ba2222;
+    padding: 30px;
+    border: #ff1111;
+}
+#output{
+    margin-top: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+    padding: 10px;
+    font-size: 3rem;
+    border: .5px solid;
+    border-radius: 2px;
+    color: white;
+}
+.hidden{
+    display: none;
+}
+#form{
+    padding: 30px;
+}
+fieldset{
+    padding: 30px;
+    border: 1px solid whitesmoke;
+    border-radius: 3px;
+    background-color: #111111ff;
+    color: white;
+}

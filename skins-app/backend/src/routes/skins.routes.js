@@ -1,17 +1,17 @@
 const express = require('express');
 const router = express.Router();
 const skinsController = require('../controllers/skins.controller');
+const { skinValidation, idValidation } = require('../middleware/validation');
+const auth = require('../middleware/auth'); // Asumiendo que tenemos middleware de autenticación
 
-/**
- * Sistema de enrutamiento RESTful
- * 
- * Buenas prácticas:
- * - Usar nombres en plural para recursos
- * - Usar verbos HTTP adecuados (GET, POST, PUT, DELETE)
- */
+// Rutas públicas
 router.get('/', skinsController.getAllSkins);
-router.post('/', skinsController.createSkin);
-router.put('/:id', skinsController.updateSkin);
-router.delete('/:id', skinsController.deleteSkin);
+router.get('/:id', idValidation, skinsController.getSkinById);
+
+// Rutas protegidas (requieren autenticación)
+router.post('/', auth, skinValidation, skinsController.createSkin);
+router.put('/:id', auth, idValidation, skinsController.updateSkin);
+router.delete('/:id', auth, idValidation, skinsController.deleteSkin);
+router.post('/purchase', auth, skinsController.purchaseSkin);
 
 module.exports = router;

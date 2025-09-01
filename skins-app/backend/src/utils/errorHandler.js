@@ -1,22 +1,59 @@
-/**
- * Middleware para manejo centralizado de errores
- * 
- * ¿Por qué es importante?
- * - Evita duplicación de código try/catch
- * - Proporciona una respuesta consistente en errores
- */
 module.exports = (err, req, res, next) => {
-  console.error('🔥 Error:', err.message);
+  console.error('Error:', {
+    message: err.message,
+    stack: err.stack,
+    url: req.originalUrl,
+    method: req.method,
+    body: req.body
+  });
   
   // Errores de base de datos
   if (err.code === '23505') {
     return res.status(409).json({ 
-      error: 'Skin duplicada: el nombre ya existe' 
+      error: 'Recurso duplicado: el valor ya existe' 
     });
   }
   
-  res.status(500).json({ 
+  if (err.code === '23503') {
+    return res.status(409).json({ 
+      error: 'Violación de clave foránea: recurso relacionado no existe' 
+    });
+  }
+  
+  if (err.code === '23502') {
+    return res.status(400).json({ 
+      error: 'Violación de restricción NOT NULL: campo obligatorio faltante' 
+    });
+  }
+  
+  // Error de validación
+  if (err.name === 'ValidationError') {
+    return res.status(400).json({ 
+      error: 'Datos de entrada inválidos',
+      details: err.details 
+    });
+  }
+  
+  // Error de autenticación
+  if (err.name === 'JsonWebTokenError') {
+    return res.status(401).json({ 
+      error: 'Token de autenticación inválido' 
+    });
+  }
+  
+  if (err.name === 'TokenExpiredError') {
+    return res.status(401).json({ 
+      error: 'Token de autenticación expirado' 
+    });
+  }
+  
+  // Error por defecto
+  const statusCode = err.statusCode || 500;
+  res.status(statusCode).json({ 
     error: 'Error interno del servidor',
-    details: process.env.NODE_ENV === 'development' ? err.message : undefined
+    ...(process.env.NODE_ENV === 'development' && { 
+      details: err.message,
+      stack: err.stack 
+    })
   });
 };

@@ -59,4 +59,22 @@ app.listen(PORT, () => {
   console.log(`🚀 Servidor escuchando en http://localhost:${PORT}`);
 });
 
+// Ruta de prueba
+app.get('/api/skins', (req, res) => {
+  res.json({
+    success: true,
+    message: 'Skins obtenidas correctamente',
+    data: [
+      {
+        id: 1,
+        name: 'AK-47 | Redline',
+        description: 'Una skin clásica de AK-47',
+        price: 25.99,
+        rarity: 'Classified',
+        image_url: 'https://example.com/ak47-redline.jpg',
+        created_at: new Date().toISOString()
+      }
+    ]
+  });
+});
 module.exports = app; // Para testing

@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a2e;
+    color: #fff;
+    line-height: 1.6;
+}
+
+header {
+    background: #16213e;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    color: #e94560;
+}
+
+button {
+    background: #e94560;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: .1rem;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #d1344f;
+}
+
+#filters {
+    padding: 1rem;
+    background: #0f3460;
+    display: flex;
+    gap: 1rem;
+}
+
+input, select {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 2px;
+}
+
+#skins-grid {
+    padding: 2rem;
+}
+
+.skin-card {
+    background: #0f3460;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    display: inline-block;
+    width: 300px;
+    border: 2px solid #16213e;
+}
+
+.skin-card:hover {
+    border-color: #e94560;
+    transform: translateY(-5px);
+}
+
+.rarity-common { border-left: 4px solid #b0b0b0; }
+.rarity-uncommon { border-left: 4px solid #2ecc71; }
+.rarity-rare { border-left: 4px solid #3498db; }
+.rarity-epic { border-left: 4px solid #9b59b6; }
+.rarity-legendary { border-left: 4px solid #f1c40f; }
+
+.price {
+    color: #e94560;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #16213e;
+    margin: 10% auto;
+    padding: 2rem;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin: 1rem 0;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.5rem;
+}
+

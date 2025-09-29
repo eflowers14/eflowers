@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Skins</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>🎮 Tienda de Skins</h1>
+        <div id="auth-section">
+            <button id="login-btn">Iniciar Sesión</button>
+            <button id="register-btn">Registrarse</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Filtros -->
+        <section id="filters">
+            <input type="text" id="search-game" placeholder="Filtrar por juego">
+            <select id="filter-rarity">
+                <option value="">Todas las rarezas</option>
+                <option value="common">Común</option>
+                <option value="uncommon">Poco común</option>
+                <option value="rare">Rara</option>
+                <option value="epic">Épica</option>
+                <option value="legendary">Legendaria</option>
+            </select>
+        </section>
+
+        <!-- Lista de skins -->
+        <section id="skins-grid">
+            <div id="loading">Cargando skins...</div>
+            <div id="skins-container"></div>
+        </section>
+
+        <!-- Modal para login/registro -->
+        <div id="auth-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="auth-forms"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -4,7 +4,7 @@ const cors = require('cors');
 const rateLimit = require('express-rate-limit');
 const app = express();
 const skinsRouter = require('./routes/skins.routes');
-const authRouter = require('./routes/auth.routes'); // Asumiendo que tenemos rutas de autenticación
+const authRouter = require('./routes/auth.routes');
 const errorHandler = require('./utils/errorHandler');
 const { verifyConnection } = require('./services/db');
 

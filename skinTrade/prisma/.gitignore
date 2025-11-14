@@ -1,0 +1,4 @@
+# Ignore Prisma client and migrations in some workflows
+/prisma/migrations
+/node_modules
+/prisma/.env

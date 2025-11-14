@@ -1,0 +1,52 @@
+{
+  "placeholderImages": [
+    {
+      "id": "cosmic-reaver",
+      "description": "Cosmic Reaver Kassadin skin",
+      "imageUrl": "https://picsum.photos/seed/1/600/400",
+      "imageHint": "magic staff"
+    },
+    {
+      "id": "dragon-lore",
+      "description": "Dragon Lore AWP skin",
+      "imageUrl": "https://picsum.photos/seed/2/600/400",
+      "imageHint": "golden dragon"
+    },
+    {
+      "id": "reaver-vandal",
+      "description": "Reaver Vandal skin",
+      "imageUrl": "https://picsum.photos/seed/3/600/400",
+      "imageHint": "purple gun"
+    },
+    {
+      "id": "black-ice",
+      "description": "Black Ice R4-C skin",
+      "imageUrl": "https://picsum.photos/seed/4/600/400",
+      "imageHint": "icy weapon"
+    },
+    {
+      "id": "golden-ghoul",
+      "description": "Golden Ghoul skin",
+      "imageUrl": "https://picsum.photos/seed/5/600/400",
+      "imageHint": "gold character"
+    },
+    {
+      "id": "oni-phantom",
+      "description": "Oni Phantom skin",
+      "imageUrl": "https://picsum.photos/seed/6/600/400",
+      "imageHint": "demon mask"
+    },
+    {
+      "id": "prime-classic",
+      "description": "Prime Classic skin",
+      "imageUrl": "https://picsum.photos/seed/7/600/400",
+      "imageHint": "white gold gun"
+    },
+    {
+      "id": "elementalist-lux",
+      "description": "Elementalist Lux skin",
+      "imageUrl": "https://picsum.photos/seed/8/600/400",
+      "imageHint": "elemental magic"
+    }
+  ]
+}

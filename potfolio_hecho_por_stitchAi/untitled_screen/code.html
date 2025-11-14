@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        body.dark {
+            background-color: #111827;
+            background-image:
+                radial-gradient(circle at 1px 1px, #374151 1px, transparent 0);
+            background-size: 20px 20px;
+        }
+        .slider {
+            height: 100px;
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+            width: auto;
+        }
+        .slider .slide-track {
+            animation: scroll 30s linear infinite;
+            display: flex;
+            width: calc(250px * 14);
+        }
+        .slider .slide {
+            height: 100px;
+            width: 250px;
+        }
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(calc(-250px * 7));
+            }
+        }
+    </style>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#3B82F6",
+                        "background-light": "#F9FAFB",
+                        "background-dark": "#111827",
+                        "card-light": "#FFFFFF",
+                        "card-dark": "#1F2937",
+                        "text-light": "#111827",
+                        "text-dark": "#F9FAFB",
+                        "subtext-light": "#6B7280",
+                        "subtext-dark": "#D1D5DB"
+                    },
+                    fontFamily: {
+                        display: ["Poppins", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark transition-colors duration-300">
+<div class="container mx-auto p-4 sm:p-6 lg:p-8">
+<header class="flex justify-between items-center mb-8">
+<h1 class="text-3xl font-bold text-primary">Mi Portfolio</h1>
+<button class="p-2 rounded-full text-subtext-light dark:text-subtext-dark hover:bg-gray-200 dark:hover:bg-gray-700" id="theme-toggle">
+<span class="material-icons">brightness_6</span>
+</button>
+</header>
+<main class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+<div class="bg-card-light dark:bg-card-dark p-6 rounded-lg shadow-lg col-span-1">
+<h2 class="text-2xl font-bold mb-2 text-text-light dark:text-text-dark">Sobre Mí</h2>
+<p class="text-subtext-light dark:text-subtext-dark">
+                    Soy un desarrollador apasionado por la tecnología y la creación de soluciones innovadoras. Con experiencia en el desarrollo full-stack, me encanta enfrentar nuevos desafíos y aprender constantemente.
+                </p>
+</div>
+<div class="bg-card-light dark:bg-card-dark p-6 rounded-lg shadow-lg col-span-1">
+<h2 class="text-2xl font-bold mb-4 text-text-light dark:text-text-dark">Skills</h2>
+<p class="text-subtext-light dark:text-subtext-dark">
+                    Mi dominio de JavaScript y React me permite construir interfaces dinámicas y resolver problemas complejos con una mentalidad analítica. A través de Node.js, demuestro mi capacidad para el pensamiento lógico y la construcción de sistemas eficientes. Mi experiencia con SQL y Tailwind CSS refleja mi atención al detalle y mi habilidad para la comunicación visual clara y organizada.
+                </p>
+</div>
+<div class="col-span-1 lg:col-span-2 slider">
+<div class="slide-track">
+<div class="slide flex items-center justify-center">
+<span class="bg-blue-100 text-blue-800 text-lg font-medium px-4 py-2 rounded-full dark:bg-blue-900 dark:text-blue-300">HTML</span>
+</div>
+<div class="slide flex items-center justify-center">
+<span class="bg-yellow-100 text-yellow-800 text-lg font-medium px-4 py-2 rounded-full dark:bg-yellow-900 dark:text-yellow-300">JavaScript</span>
+</div>
+<div class="slide flex items-center justify-center">
+<span class="bg-sky-100 text-sky-800 text-lg font-medium px-4 py-2 rounded-full dark:bg-sky-900 dark:text-sky-300">React</span>
+</div>
+<div class="slide flex items-center justify-center">
+<span class="bg-green-100 text-green-800 text-lg font-medium px-4 py-2 rounded-full dark:bg-green-900 dark:text-green-300">Node.js</span>
+</div>
+<div class="slide flex items-center justify-center">
+<span class="bg-indigo-100 text-indigo-800 text-lg font-medium px-4 py-2 rounded-full dark:bg-indigo-900 dark:text-indigo-300">Tailwind CSS</span>
+</div>
+<div class="slide flex items-center justify-center">
+<span class="bg-purple-100 text-purple-800 text-lg font-medium px-4 py-2 rounded-full dark:bg-purple-900 dark:text-purple-300">SQL</span>
+</div>
+<div class="slide flex items-center justify-center">
+<span class="bg-pink-100 text-pink-800 text-lg font-medium px-4 py-2 rounded-full dark:bg-pink-900 dark:text-pink-300">Python</span>
+</div>
+<div class="slide flex items-center justify-center">
+<span class="bg-blue-100 text-blue-800 text-lg font-medium px-4 py-2 rounded-full dark:bg-blue-900 dark:text-blue-300">HTML</span>
+</div>
+<div class="slide flex items-center justify-center">
+<span class="bg-yellow-100 text-yellow-800 text-lg font-medium px-4 py-2 rounded-full dark:bg-yellow-900 dark:text-yellow-300">JavaScript</span>
+</div>
+<div class="slide flex items-center justify-center">
+<span class="bg-sky-100 text-sky-800 text-lg font-medium px-4 py-2 rounded-full dark:bg-sky-900 dark:text-sky-300">React</span>
+</div>
+<div class="slide flex items-center justify-center">
+<span class="bg-green-100 text-green-800 text-lg font-medium px-4 py-2 rounded-full dark:bg-green-900 dark:text-green-300">Node.js</span>
+</div>
+<div class="slide flex items-center justify-center">
+<span class="bg-indigo-100 text-indigo-800 text-lg font-medium px-4 py-2 rounded-full dark:bg-indigo-900 dark:text-indigo-300">Tailwind CSS</span>
+</div>
+<div class="slide flex items-center justify-center">
+<span class="bg-purple-100 text-purple-800 text-lg font-medium px-4 py-2 rounded-full dark:bg-purple-900 dark:text-purple-300">SQL</span>
+</div>
+<div class="slide flex items-center justify-center">
+<span class="bg-pink-100 text-pink-800 text-lg font-medium px-4 py-2 rounded-full dark:bg-pink-900 dark:text-pink-300">Python</span>
+</div>
+</div>
+</div>
+<div class="bg-card-light dark:bg-card-dark p-6 rounded-lg shadow-lg col-span-1 lg:col-span-2">
+<h2 class="text-2xl font-bold mb-2 text-text-light dark:text-text-dark">Proyectos</h2>
+<p class="text-subtext-light dark:text-subtext-dark mb-6">
+                    Aquí encontrarás una selección de mis trabajos más recientes. Cada proyecto representa un reto que me ha permitido crecer como profesional.
+                </p>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden bg-white dark:bg-gray-800">
+<img alt="Laptop con código en la pantalla" class="w-full h-40 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBb_F1V7apywk2ohaBCw-UgOQvN6Wo4mnnLTUWfxNXi4T__8LXVI9aDjlGP5-PC0OWyOqckOI7fXQacwHQejFd5DhpdUaWUswzuc2o3-9suc-KivosvWJEOEGc7qPNdz9MAJq9UQmDIYi8KZ0SeW7F3y-YaKk2PX9CuH3nz0Pd9zYSBD1WbE6pDhkDgjjGY9y7FsU_T6AxvpOCiZG0_A2WF94O5xcm90VIMyD0mh4n6JwUYcbfaRjEDqWm7vQOweHxWMhKl-lhCx9I"/>
+<div class="p-4">
+<h3 class="font-semibold text-lg mb-1 text-text-light dark:text-text-dark">E-commerce Platform</h3>
+<p class="text-sm text-subtext-light dark:text-subtext-dark">Una plataforma de comercio electrónico completa con carrito de compras y pasarela de pago.</p>
+</div>
+</div>
+<div class="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden bg-white dark:bg-gray-800">
+<img alt="Dashboard con gráficos y estadísticas" class="w-full h-40 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYfTpGf3BzlH3389Nz1KKo2cEpQtOQI-UvtPM9srLNvmYQZmbCKm1zulL0EMDiY_yDZKBgr-BoNtWn3Kxcs6aRjmlipiRiv5GFfWzdks8s22WHByajWKr2Q-M0OGa3vIom4bTeK8nrNyO5jIE3jkGSTI8PT3bWai6wQaNAHxMmchQkJg1rDkLKHt4cBBzCb91-UetHTgIoujhl3qY2aeLtT7QZR_Hv7qTjgLsqT9u98ZOe-27XsIcHwMU97ZZOi0yG6ZuM9AhXWX8"/>
+<div class="p-4">
+<h3 class="font-semibold text-lg mb-1 text-text-light dark:text-text-dark">Dashboard Analítico</h3>
+<p class="text-sm text-subtext-light dark:text-subtext-dark">Un panel de control para visualizar y analizar datos de ventas en tiempo real.</p>
+</div>
+</div>
+<div class="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden bg-white dark:bg-gray-800">
+<img alt="Diseño de aplicación móvil en varias pantallas" class="w-full h-40 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3v7SLbC00jxu9P3qXktdHL7g7U6JtPUqaI89bZ6aRXuGc8wsuJfWIjUopVEPhtPqz4VAk7avPA7XsSAvUnxQvPdh13no3q0vAnelPPOWlZERnZLqmEUct9Z08zV8jE-u6XH0PqDEGR1TZJxYyMjLJpfdJVdfW2uzIq4LQOuSoZ2pCydV9Daj9EwPe_m5RPGHflcXupPC502IrIbvcHIgFBUsrCYMOpYlSykJQbfKaSWVUCFLMfe-psUfzQfd5cZw1JJYXWcIxe7A"/>
+<div class="p-4">
+<h3 class="font-semibold text-lg mb-1 text-text-light dark:text-text-dark">App de Red Social</h3>
+<p class="text-sm text-subtext-light dark:text-subtext-dark">Una aplicación móvil para conectar con amigos y compartir momentos.</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+<script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const bodyEl = document.body;
+        const htmlEl = document.documentElement;
+        function applyTheme(theme) {
+            if (theme === 'dark') {
+                htmlEl.classList.add('dark');
+                bodyEl.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                htmlEl.classList.remove('dark');
+                bodyEl.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+            }
+        }
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        const storedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (storedTheme === 'dark' || (!storedTheme && systemPrefersDark)) {
+            applyTheme('dark');
+        } else {
+            applyTheme('light');
+        }
+        themeToggle.addEventListener('click', () => {
+            if (htmlEl.classList.contains('dark')) {
+                applyTheme('light');
+            } else {
+                applyTheme('dark');
+            }
+        });
+    </script>
+
+</body></html>

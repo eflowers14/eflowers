@@ -3,11 +3,6 @@
   "builds": [
     { "src": "package.json", "use": "@vercel/next" }
   ],
-  "env": {
-    "DATABASE_URL": "@skintrade_database_url",
-    "FIREBASE_API_KEY": "@skintrade_firebase_api_key",
-    "FIREBASE_PROJECT_ID": "@skintrade_firebase_project_id"
-  },
   "routes": [
     { "src": "/api/(.*)", "dest": "/api/$1" },
     { "src": "/(.*)", "dest": "/" }

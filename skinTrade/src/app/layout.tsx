@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import { Toaster } from '@/components/ui/toaster';
+import { Toaster } from '@/components/ui/toaster'
 import Header from '@/components/header';
-import './globals.css';
+import '@/globals.css';
 import localFont from "next/font/local";
 
 const ptSans = localFont({

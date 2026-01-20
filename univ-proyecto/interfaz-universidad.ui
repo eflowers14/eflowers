@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sistema de Gestión Universitaria</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="labelTitulo">
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:24pt; font-weight:600; color:#2c3e50;&quot;&gt;SISTEMA DE GESTIÓN UNIVERSITARIA&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tabRegistro">
+       <attribute name="title">
+        <string>Registrar Usuario</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tabUsuarios">
+       <attribute name="title">
+        <string>Usuarios Registrados</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tabConsultas">
+       <attribute name="title">
+        <string>Consultas</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tabEstadisticas">
+       <attribute name="title">
+        <string>Estadísticas</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
